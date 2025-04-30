@@ -19,9 +19,6 @@ class Item(Base):
     description = Column(String)
 
 
-# DBのテーブル作成
-Base.metadata.create_all(bind=engine)
-
 app = FastAPI(title="FastAPI with PostgreSQL")
 
 # DBセッションの依存関係
